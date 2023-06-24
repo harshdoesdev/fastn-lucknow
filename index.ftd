@@ -1,40 +1,61 @@
--- ds.page: Welcome to doc-site
+-- ftd.color lko-shadow:
+light: #8AB8A8
+dark: #8AB8A8
 
+-- ftd.shadow s:
+color: $lko-shadow
+x-offset.px: 10
+y-offset.px: 10
+blur.px: 1
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
+-- ftd.column:
+width: fill-container
+height: fill-container
+background.solid: #FDF3E7
+color: #fff
+align-content: center
 
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
+-- Card: लखनऊ में आपका स्वागत है
 
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
+Lucknow, the city where sophistication blooms,
+A canvas of artisans, creating timeless heirlooms.
+Its heritage, a testament to a glorious past,
+Embracing traditions that eternally last.
 
--- ds.h3: 🚀 Fast Track 
+-- end: ftd.column
 
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
+-- component Card:
+caption title: Default title
+body description: Default body
 
--- ds.h3: 🌟 Whats next?
+-- ftd.row:
+width.fixed.px: 650
+height.fixed.px: 350
+background.solid: #F6E9D9
+border-color: #C9C9C9
+border-width.px: 3
+padding.px: 20
+border-radius.px: 20
+spacing.fixed.px: 50
+shadow: $s
 
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/page/).
+-- ftd.image:
+src: https://images.pexels.com/photos/6481558/pexels-photo-6481558.jpeg?cs=srgb&dl=pexels-shivam-%E2%80%8E-6481558.jpg&fm=jpg
+height: fill-container
+border-radius.px: 20
 
--- ds.h3: 👀 Want to learn more?
+-- ftd.column:
 
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- ftd.text: $Card.title
+color: #D3532F
+role: $inherited.types.heading-medium
 
+-- ftd.text: $Card.description
+color: #3E424B
+role: $inherited.types.copy-regular
 
--- ds.h3: 🎯 Used by?
+-- end: ftd.column
 
-Our all documentation sites uses this `doc-site` theme.
+-- end: ftd.row
 
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
-
--- ds.h2: Learn fastn and become a pro?
-
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
-
--- end: ds.page
+-- end: Card
